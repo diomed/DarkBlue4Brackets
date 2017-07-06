@@ -1,7 +1,7 @@
 # DarkBlue4Brackets
 
-Dark Blue theme is inspired by one of most fascinating themes I've encountered, 
-and that is [Bartelme](http://www.bartelme.at)'s Dark Blue theme for WordPress.
+Dark Blue theme is inspired by one of most fascinating color schemes I've encountered; 
+and that is one from [Bartelme](http://www.bartelme.at)'s Dark Blue theme for WordPress.
 
 His color scheme was so bold and different than others, that I swore to myself 
 - one day I'll make a coding theme out of it. (Silly me.) And here it is. 
