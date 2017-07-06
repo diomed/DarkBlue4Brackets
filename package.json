@@ -1,0 +1,15 @@
+{
+    "name": "dark-blue",
+    "title": "Dark Blue",
+    "description": "Dark Blue theme contains deep blue color scheme, & it's insipired by good old Bartelme's Dark Blue theme for WordPres",
+    "homepage": "https://github.com/diomed/bartelme-darkblue",
+    "version": "1.0.0",
+    "author": "diomed",
+    "license": "MIT",
+    "theme": {
+        "file": "main.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme", "blue", "dark", "bartelme"]
+}

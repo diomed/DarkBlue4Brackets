@@ -1,0 +1,115 @@
+/*
+* Bartelme Dark Theme 
+¨&¨ Author: diomed ¨&¨
+*/
+
+/* Editor styling */
+
+@background: #020a20; // Code Background
+@foreground: #fafafa; // Code foreground
+@comment: #1f2b76; // Comment color
+@comment-active: rgba(6, 158, 188, 0.62); // Comment active
+@cursor: cornflowerblue; // Cursor color 
+@activeline-background: rgba(25, 29, 33, 0.79); // Active line
+@activeline-foreground: rgba(0, 217, 255, 0.33);
+@matchingtag-background: #122a3c; // Matching tag
+@selected-background: #011343; // Selected text
+@matchingbracket-background: #001342; // Matching bracket
+
+/* Inline styling */
+
+@atom: #32ae85; // Bool
+@string: #5b9cff; // String
+@tag: #054dbf; // HTML tag and primary variable
+@variable: #67a2df; // Variable
+@variable2: cornflowerblue; // Alternate variable
+@variable3: #1f2b76; 
+
+@number: #ffbb17; // Number
+@definition: rgb(150, 255, 45); // CSS value
+@keyword: #4687d0; // CSS !important, JavaScript variable definition
+@operator: #FF8C00; // Math
+@meta: @background; // DOCTYPE and PHP background
+@meta-color: #9492d5; // DOCTYPE and PHP font color
+@id: #ff8c00; // CSS ID, built in
+@attribute:  #7289DA; // HTML attribute
+@property: #fff1dc; // CSS key
+@qualifier: #0089de; // CSS class
+@error: #cb253d; // Error!
+
+/* Styles */
+
+.CodeMirror, .CodeMirror-scroll { background: @background; color: @foreground; line-height:1.5; font-family:  Monaco, Titillium, Ubuntu Mono, Inconsolata, Courier, monospace;} // Overlay
+.CodeMirror-selected { background: @selected-background !important; } // Selected text
+.cm-comment { color: @comment !important; }
+.cm-keyword { color: @keyword; } // Keyword
+.cm-atom { color: @atom; font-weight: bold;} // Bool
+.cm-number { color: @number; } // Number
+.cm-def { color: @definition; font-style: italic; } // Definition
+.cm-variable { color: @variable; } // Variable
+span.cm-variable-2 { color: @variable2 } // Variable 2
+span.cm-variable-3  { color: @variable3; }
+
+span.cm-tag { color: @tag; } // Tag
+
+.cm-operator { color: @operator; } // Math
+.cm-string { color: @string; } // String
+.cm-string-2 { color: @string; }
+.cm-meta { 	background: @meta; 	color: @meta-color; } // Meta
+.cm-builtin { color: @id; } // Built in and id
+.cm-tag { color: @tag; } // Tag
+.cm-attribute { color: @attribute; } // Attribute
+.cm-header { color: @attribute; } // Header
+.cm-hr { color: @comment; }
+.cm-link { color: @operator; }
+.cm-error { color: @error; background: rgba(0, 19, 66, 0.62); }
+.cm-qualifier { color: @qualifier; } // Qualifier
+.cm-property { color: @property; } // Property
+.cm-quote { color: @keyword } // Quote
+.cm-link, .cm-link.cm-variable-2 { color: #FFF !important } // Links
+
+/* Additional styles */
+
+.CodeMirror-matchingbracket { // Matching bracket
+	outline: 1px solid #FFF;
+	color: white !important;
+	background: @matchingbracket-background;
+}
+.CodeMirror-activeline .cm-comment { color: @comment-active !important; } // Active comment
+.CodeMirror-matchingtag { background: @matchingtag-background; } // Matching tag
+.CodeMirror .CodeMirror-cursor {
+	border-left: 1px solid @cursor !important;
+}
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+	border-left: none !important;
+	border-bottom: 1px solid @cursor;
+	width: 1.2ex;
+}
+.CodeMirror-guttermarker { color: antiquewhite; }
+.CodeMirror-guttermarker-subtle { color: #1d1e30; }
+.CodeMirror .CodeMirror-gutters { background-color: #020a20; border-right: 1px solid rgba(39, 56, 59, 0.28); }
+.CodeMirror .CodeMirror-linenumber { color: #4e9ce2; }
+.CodeMirror-activeline .CodeMirror-gutter-elt { color: #fff !important; }
+.CodeMirror-activeline-background, .CodeMirror-activeline .CodeMirror-gutter-elt { background: @activeline-background !important; }
+.CodeMirror-searching { background-color: rgba(9, 163, 199, 0.9);&.searching-current-match { background-color: rgb(35, 228, 253); } } // Searching match colors
+.CodeMirror-scrollbar-filler {height: 11px !important;width: 11px !important; background: #1d1e30;}
+/* Scrollbar gutter for the sidebar*/
+#sidebar ::-webkit-scrollbar-track { background-color: transparent; }
+
+/* Scrollbar  ::-webkit-scrollbar"  in the main area */
+::-webkit-scrollbar {width: 11px !important; height: 11px !important;}
+
+.CodeMirror-scrollbar-filler {height: 11px !important;width: 11px !important; background: #5C5C5C;}
+
+.CodeMirror-vscrollbar{bottom: 11px !important; top: 11px ;border-right: thin solid #999;}
+
+.CodeMirror .CodeMirror-hscrollbar{ height: 11px; right: 11px !important;}
+
+/* Scrollbar gutter - Scrollbar rinne */
+::-webkit-scrollbar-track {background-color: @background;}
+
+/* Scroll object - "background-color" dont work use border to change color*/
+::-webkit-scrollbar-thumb {border: 6px solid #1d1e30; border-radius: 2px;}
+
+::-webkit-scrollbar-thumb:hover { border: 6px solid #1d1e30; }
+::-webkit-scrollbar-thumb:active { border: 6px solid #1d1e30; }
