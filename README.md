@@ -7,6 +7,8 @@ His color scheme was so bold and different than others, that I swore to myself
 - one day I'll make a coding theme out of it. (Silly me.) And here it is. 
 I hope you'll like it.
 
+![screenshot](https://raw.githubusercontent.com/diomed/DarkBlue4Brackets/master/screenshot/screenshot.png)
+
 ##  How to Use
 1. Open Brackets.
 2. Open the `Extension Manager`.
